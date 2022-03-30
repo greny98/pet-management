@@ -5,7 +5,7 @@ let router = express.Router();
  * TODO: Get home
  */
 router.get("/", (req, res) => {
-  res.render("index");
+  res.render("pages/index");
 });
 
 module.exports = router;
