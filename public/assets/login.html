@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Đăng Nhập</title>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="/assets/css/login.css">
 </head>
 <body>
@@ -18,10 +19,9 @@
         <p>Nhập thông tin chi tiết của bạn vào bên dưới</p>
 
         <div>
-            <form class="login-form" action="/auth/login" method="post">
-                <input class="login-input" type="text" name="data[username]" placeholder="Tên đăng nhập"></br>
-                <input class="login-input" type="password" name="data[password]" id="password"
-                       placeholder="Mật khẩu"></br>
+            <form class="login-form" action="LogIn">
+                <input class="login-input" type="text" name="username" placeholder="Tên đăng nhập"></br>
+                <input class="login-input" type="password" name="password" id="password" placeholder="Mật khẩu"></br>
                 <div id="def">
                     <div class="check-box">
                         <input type="checkbox" name="" id="checkbox">
