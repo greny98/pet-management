@@ -1,21 +1,20 @@
 @font-face {
     font-family: "PublicSans";
-    src: url( /assets/font/static/PublicSans-Medium.ttf);
+    src: url(/public/assets/font/static/PublicSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "PublicSans";
     font-weight: bold;
-    src: url(/assets/font/static/PublicSans-Bold.ttf);
+    src: url(/public/assets/font/static/PublicSans-Bold.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: PublicSans, serif;
 }
-
 #register-page{
     position: relative;
     background-color: rgba(22, 28, 36, 1);

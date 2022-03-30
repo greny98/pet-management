@@ -1,12 +1,12 @@
 @font-face {
     font-family: "PublicSans";
-    src: url(/assets/font/static/PublicSans-Medium.ttf);
+    src: url(/public/assets/font/static/PublicSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "PublicSans";
     font-weight: bold;
-    src: url(/assets/font/static/PublicSans-Bold.ttf);
+    src: url(/public/assets/font/static/PublicSans-Bold.ttf);
 }
 
 * {
