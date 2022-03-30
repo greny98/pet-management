@@ -29,21 +29,23 @@ app.use("/pets", auth, petRouter);
 
 //TODO: catch 404 and forward to error handler
 app.use((req, res, next) => {
-  next(createError(404));
+  next(new AppError(404, "Not Found!"));
 });
 
 // TODO: error handler
 app.use((err, req, res, next) => {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
-
   // render the error page
   res.status(err.status || 500);
-  if (err.status === 404) res.render("error/404");
-  else if (err.status === 500) res.render("error/500");
-  else if (err.status === 401) res.render("error/401");
-  else res.send("Error");
+  switch (err.status) {
+    case 404:
+      return res.render("error/404");
+    case 500:
+      return res.render("error/500");
+    case 401:
+      return res.render("error/401");
+    default:
+      return res.send("Error");
+  }
 });
 
 module.exports = app;

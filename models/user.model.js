@@ -30,12 +30,12 @@ const userSchema = new mongoose.Schema({
     required: true,
     // TODO: Phone validation
   },
+  address: {
+    type: String,
+  },
   admin: {
     type: Boolean,
     default: false,
-  },
-  address: {
-    type: String,
   },
 });
 
