@@ -112,6 +112,11 @@
     font-size: 20px;
 }
 
+.register-form input{
+    color: antiquewhite;
+    font-size: 20px;
+}
+
 .register-form .register-summit{
     margin-top: 12px;
     width: 100%;
@@ -144,11 +149,11 @@
     .register-content{
         position: absolute;
         width: 90%;
-        height: 100%;
-        top: 15%;
+        height: 70vh;
+        top:15%;
         left: 5%;
         right:5%;
-        background-color: rgba(33, 43, 54, 1);
+        background-color: rgba(22, 28, 36, 1);
     }
     .register-form .register-name{
         display: block;
