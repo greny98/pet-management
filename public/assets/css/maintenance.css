@@ -37,6 +37,7 @@ body{
     line-height: 48px;
     font-weight: bold;
     margin-bottom: 24px;
+    text-align: justify;
 }
 
 #main-content p{
@@ -53,7 +54,7 @@ body{
 }
 
 #main-content a{
-    width: 30%;
+    width: 180px;
     height: 60px;
     font-size: 20px;
     line-height: 60px;
